@@ -18,10 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_appsdir	%{_libdir}/ROX-apps
 
 %description
-rox-MIME-Editor is a graphical editor for Shared MIME Database
+rox-MIME-Editor is a graphical editor for Shared MIME Database.
 
 %description -l pl
-rox-MIME-Editor jest graficznym edytorem dla Shared MIME Database
+rox-MIME-Editor jest graficznym edytorem dla dzielonej biblioteki MIME.
 
 %prep
 %setup -q -n mime-editor-%{version}
