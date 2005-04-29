@@ -11,6 +11,7 @@ Source0:	http://dl.sourceforge.net/rox/mime-editor-%{version}.tgz
 Source1:	%{name}.desktop
 URL:		http://rox.sourceforge.net/phpwiki/index.php/MIME-Editor
 Requires:	python-pygtk-gtk
+Requires:	rox >= 2.2.0-2
 Requires:	rox-Lib2
 %pyrequires_eq  python
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -47,7 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_name}/Help/Changes
-%attr(755,root,root) %dir %{_appsdir}
 %attr(755,root,root) %{_appsdir}/%{_name}/AppRun
 %dir %{_appsdir}/%{_name}
 %{_appsdir}/%{_name}/Help
