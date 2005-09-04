@@ -7,7 +7,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/mime-editor-%{version}.tgz
-# Source0-md5:	d41d8cd98f00b204e9800998ecf8427e
+# Source0-md5:	957096e26d374233bb6954fcac2816ca
 Source1:	%{name}.desktop
 URL:		http://rox.sourceforge.net/phpwiki/index.php/MIME-Editor
 Requires:	python-pygtk-gtk
