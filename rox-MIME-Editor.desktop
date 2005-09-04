@@ -2,7 +2,7 @@
 Name=ROX-MIME-Editor
 Comment=Graphical editor for MIME types
 Comment[pl]=Graficzny edytor typów MIME
-Exec=/usr/lib/ROX-apps/MIME-Editor/AppRun
+Exec=/usr/lib/rox/MIME-Editor/AppRun
 Icon=rox-MIME-Editor.png
 Terminal=false
 Type=Application
