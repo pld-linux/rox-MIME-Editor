@@ -2,14 +2,14 @@
 Summary:	Graphical editor for MIME types
 Summary(pl):	Graficzny edytor typów MIME
 Name:		rox-%{_name}
-Version:	0.4
+Version:	0.5
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/rox/mime-editor-%{version}.tgz
-# Source0-md5:	957096e26d374233bb6954fcac2816ca
+# Source0-md5:	a86d3d6b70bbce58abb6d393a9e8eede
 Source1:	%{name}.desktop
-URL:		http://rox.sourceforge.net/phpwiki/index.php/MIME-Editor
+URL:		http://rox.sourceforge.net/desktop/MIME-Editor
 Requires:	python-pygtk-gtk
 Requires:	rox >= 2.3
 Requires:	rox-Lib2 >= 1.9.7
@@ -33,11 +33,11 @@ install -d $RPM_BUILD_ROOT%{_roxdir}/%{_name}/{Help,Messages}
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 cd %{_name}
-install .DirIcon App* *.py $RPM_BUILD_ROOT%{_roxdir}/%{_name}
+install .DirIcon AppRun *.xml *.py $RPM_BUILD_ROOT%{_roxdir}/%{_name}
 install Help/README $RPM_BUILD_ROOT%{_roxdir}/%{_name}/Help
 install Messages/*.gmo $RPM_BUILD_ROOT%{_roxdir}/%{_name}/Messages
 install .DirIcon $RPM_BUILD_ROOT%{_pixmapsdir}/%{name}.png
-install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
+sed -e "s,/lib/,/%{_lib}/," %{SOURCE1} > $RPM_BUILD_ROOT%{_desktopdir}/%{name}.desktop
 
 %py_comp $RPM_BUILD_ROOT%{_roxdir}/%{_name}
 %py_ocomp $RPM_BUILD_ROOT%{_roxdir}/%{_name}
