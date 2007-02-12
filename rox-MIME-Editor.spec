@@ -1,6 +1,6 @@
 %define _name MIME-Editor
 Summary:	Graphical editor for MIME types
-Summary(pl.UTF-8):   Graficzny edytor typów MIME
+Summary(pl.UTF-8):	Graficzny edytor typów MIME
 Name:		rox-%{_name}
 Version:	0.5
 Release:	1
