@@ -1,6 +1,6 @@
 %define _name MIME-Editor
 Summary:	Graphical editor for MIME types
-Summary(pl):	Graficzny edytor typów MIME
+Summary(pl.UTF-8):   Graficzny edytor typÃ³w MIME
 Name:		rox-%{_name}
 Version:	0.5
 Release:	1
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 rox-MIME-Editor is a graphical editor for Shared MIME Database.
 
-%description -l pl
+%description -l pl.UTF-8
 rox-MIME-Editor jest graficznym edytorem dla dzielonej biblioteki MIME.
 
 %prep
